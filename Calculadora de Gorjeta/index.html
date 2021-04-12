@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Calculadora de Gorjeta</title>
+</head>
+<body>
+    <div id="container">
+        <div id="tudo">
+            <h2>Calculadora de Gorjeta</h2>
+            <hr>
+            <div class="divisoes">
+                <label class="subtitulos">Valor da conta</label> <br>
+                <button class= "enfeite"><i class="fas fa-dollar-sign"></i></button> 
+                <input id="preco" type="number">
+            </div>   
+            <div class="divisoes">    
+                <label class="subtitulos">Numero de pessoas na mesa</label> <br>
+                <button class="enfeite"><i class="fas fa-male"></i></i></button>
+                <input id="pessoas" type="number">
+            </div>
+            <div class="divisoes">
+                <label class="subtitulos">Qualidade do serviço</label> <br>
+                <select id="qualidade">
+                    <option value="0" disabled selected>Selecione</option>
+                    <option value="1/100">Péssimo - 1%</option>
+                    <option value="5/100">Ruim - 5%</option>
+                    <option value="10/100">Padrão - 10%</option>
+                    <option value="15/100">Bom - 15%</option>
+                    <option value="20/100">Excelente - 20%</option>
+                </select>
+            </div>
+            <div class="divisoes">
+                <hr>
+                <button id="submit">Calcular</button>
+            </div>
+        </div>
+
+        <div id="resultado"></div>
+
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
